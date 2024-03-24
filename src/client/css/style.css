@@ -1,0 +1,45 @@
+body {
+	overflow: hidden;
+	margin: 0px;
+}
+
+#pingStats {
+	position: absolute;
+	top: 60px;
+	left: 4px;
+	width: 400px;
+	height: 400px;
+	pointer-events: none;
+	color: white;
+	font-family: monospace;
+}
+
+#reconnect {
+	position: absolute;
+	top: 120px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 300px;
+	height: 200px;
+	background-color: rgba(120, 120, 120, 0.7);
+	border-radius: 12px;
+}
+
+.loader {
+	position: relative;
+	top: calc(50% - 48px);
+	left: calc(50% - 48px);
+	transform: translate(-50%, -50%);
+	border: 12px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 12px solid blue;
+	border-bottom: 12px solid blue;
+	width: 80px;
+	height: 80px;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
